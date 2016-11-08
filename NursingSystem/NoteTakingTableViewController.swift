@@ -8,22 +8,58 @@
 
 import UIKit
 
-class NoteTakingTableViewController: UITableViewController {
+class NoteTakingTableViewController: UITableViewController,NoteViewDelegate {
     
     
     @IBOutlet weak var Menu: UIBarButtonItem!
+    var arrNotes=[[String:String]]()
+    var selectedIndex = -1
     
     
+    @IBAction func newNote(sender: AnyObject) {
+        var newdict=["title":"","body":""]
+        arrNotes.insert(newdict, atIndex: 0)
+        self.selectedIndex=0
+        self.tableView.reloadData()
+       saveNoteArray()
+         performSegueWithIdentifier("showEditorSegue", sender: nil)
+    }
     
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let noteEditorVC=segue.destinationViewController as! NotesViewController
+        noteEditorVC.navigationItem.title=arrNotes[self.selectedIndex]["title"]
+        noteEditorVC.strBodyText=arrNotes[self.selectedIndex]["body"]
+        noteEditorVC.delegate=self
+    }
     
     
+    func didUpdateNoteWithTitle(newTitle: String, andBody newBody: String) {
+        if newTitle != ""
+        {
+        self.arrNotes[self.selectedIndex]["title"]=newTitle
+        self.arrNotes[self.selectedIndex]["body"]=newBody
+//        for ar in arrNotes
+//        {
+//            for (key,value) in ar
+//            {
+//               if(value != "")
+//               {
+//                arrNotes.remove
+//                }
+//            }
+//        }
+        self.tableView.reloadData()
+        saveNoteArray()
+        }
+    }
     
     
-    
-    
-    
-    
+    func saveNoteArray()
+    {
+        NSUserDefaults.standardUserDefaults().setObject(arrNotes, forKey: "notes")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
     
     
     
@@ -33,6 +69,31 @@ class NoteTakingTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let newNotes=NSUserDefaults.standardUserDefaults().arrayForKey("notes") as? [[String:String]]
+        {
+            arrNotes=newNotes
+        }
+//        for check in arrNotes
+//        {
+//            
+//            
+//            for(kay , value) in check
+//            {
+//                if value == ""
+//                {
+//                    arrNotes.removeValueForKey(kay)
+//                }
+//            }
+        
+//            let indextoremove = check.keys.array.filter { check[$0]! == "" }
+//            for key in indextoremove
+//            {
+//                check.removeValueForKey(key)
+//            }
+           
+        //}
+       
+        
         if self.revealViewController() != nil
         {
             Menu.target=self.revealViewController()
@@ -46,6 +107,7 @@ class NoteTakingTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,23 +119,29 @@ class NoteTakingTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return arrNotes.count
     }
 
-    /*
+  
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+       var cell = tableView.dequeueReusableCellWithIdentifier("CELL", forIndexPath: indexPath)
+        cell.textLabel?.text=arrNotes[indexPath.row]["title"]
 
         // Configure the cell...
 
         return cell
     }
-    */
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+         self.selectedIndex=indexPath.row
+        performSegueWithIdentifier("showEditorSegue", sender: nil)
+       
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

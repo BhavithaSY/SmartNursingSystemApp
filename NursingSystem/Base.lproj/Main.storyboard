@@ -233,11 +233,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zcN-Zg-AVv">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CELL" id="zcN-Zg-AVv">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zcN-Zg-AVv" id="R7C-Dv-Dwb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -252,14 +252,57 @@
                             <barButtonItem title="Menu" id="oLW-81-j8i"/>
                             <barButtonItem id="J7N-8X-n9Y"/>
                         </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lED-Za-6Ne">
+                            <connections>
+                                <action selector="newNote:" destination="yeU-Np-3E0" id="ikw-kZ-QdE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="Menu" destination="oLW-81-j8i" id="ajf-yU-HIp"/>
+                        <segue destination="ujl-fF-pnB" kind="push" identifier="showEditorSegue" id="QHE-s8-7RE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULI-gR-Cny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261" y="505"/>
+            <point key="canvasLocation" x="1231" y="429"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="4xt-1D-odN">
+            <objects>
+                <viewController id="ujl-fF-pnB" customClass="NotesViewController" customModule="NursingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="72X-VD-1Kx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xwt-1u-vrY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vPM-by-AsK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oB9-qh-TmU">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S7l-PW-IJm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Hyd-Zw-zyX">
+                            <connections>
+                                <action selector="doneEditingBody:" destination="ujl-fF-pnB" id="y1D-ML-wZZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnDoneEditing" destination="Hyd-Zw-zyX" id="bUz-yV-9ca"/>
+                        <outlet property="txtBody" destination="oB9-qh-TmU" id="Kqf-qP-sA5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kq-t2-eWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2003" y="419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d48-bf-cjd">

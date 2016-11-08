@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8012B821DD19580008FE33D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8012B811DD19580008FE33D /* NotesViewController.swift */; };
 		E8892ACE1DCEABA200748739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8892ACD1DCEABA200748739 /* AppDelegate.swift */; };
 		E8892AD01DCEABA200748739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8892ACF1DCEABA200748739 /* ViewController.swift */; };
 		E8892AD31DCEABA200748739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8892AD11DCEABA200748739 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8012B811DD19580008FE33D /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		E8892ACA1DCEABA200748739 /* NursingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8892ACD1DCEABA200748739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8892ACF1DCEABA200748739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E8892AD41DCEABA200748739 /* NursingSystem.xcdatamodeld */,
 				E8892B031DCEAF6500748739 /* OurViewController.swift */,
 				E8892B051DCEB24800748739 /* NoteTakingTableViewController.swift */,
+				E8012B811DD19580008FE33D /* NotesViewController.swift */,
 			);
 			path = NursingSystem;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				E8892AD01DCEABA200748739 /* ViewController.swift in Sources */,
 				E8892B061DCEB24800748739 /* NoteTakingTableViewController.swift in Sources */,
 				E8892ACE1DCEABA200748739 /* AppDelegate.swift in Sources */,
+				E8012B821DD19580008FE33D /* NotesViewController.swift in Sources */,
 				E8892B041DCEAF6500748739 /* OurViewController.swift in Sources */,
 				E8892AD61DCEABA300748739 /* NursingSystem.xcdatamodeld in Sources */,
 				E8892B021DCEAC3400748739 /* SWRevealViewController.m in Sources */,
@@ -515,6 +519,7 @@
 				E8892AF71DCEABA300748739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8892AF81DCEABA300748739 /* Build configuration list for PBXNativeTarget "NursingSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				E8892AFA1DCEABA300748739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8892AFB1DCEABA300748739 /* Build configuration list for PBXNativeTarget "NursingSystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +537,7 @@
 				E8892AFD1DCEABA300748739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
