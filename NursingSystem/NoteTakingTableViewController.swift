@@ -73,6 +73,7 @@ class NoteTakingTableViewController: UITableViewController,NoteViewDelegate {
         {
             arrNotes=newNotes
         }
+      //  self.tableView.allowsMultipleSelectionDuringEditing = NO;
 //        for check in arrNotes
 //        {
 //            
@@ -110,6 +111,29 @@ class NoteTakingTableViewController: UITableViewController,NoteViewDelegate {
         tableView.reloadData()
     }
 
+    
+   
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == .Delete)
+        {
+         print("you pressed delete")
+            arrNotes.removeAtIndex(indexPath.row)
+            saveNoteArray()
+            tableView.reloadData()
+            
+        }
+    }
+    func deleteFirstRow()
+    {
+        arrNotes.removeAtIndex(0)
+        self.tableView.reloadData()
+        saveNoteArray()
+    }
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

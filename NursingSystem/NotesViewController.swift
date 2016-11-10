@@ -9,6 +9,7 @@
 import UIKit
 protocol NoteViewDelegate {
     func didUpdateNoteWithTitle(newTitle:String,andBody newBody:String)
+    func deleteFirstRow()
 }
 
 class NotesViewController: UIViewController,UITextViewDelegate {
@@ -35,6 +36,13 @@ class NotesViewController: UIViewController,UITextViewDelegate {
             {
             self.delegate!.didUpdateNoteWithTitle(self.navigationItem.title!, andBody: self.txtBody.text)
             }
+            else
+            {
+                self.btnDoneEditing.tintColor=UIColor(red: 0,green: 122.0/255.0,blue:1,alpha:1)
+                let alert=UIAlertController(title:"Error",message: "Note is empty",preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title:"Close",style: .Default,handler: {_ in}))
+                self.presentViewController(alert, animated: true, completion: {})
+            }
         }
         
     }
@@ -60,6 +68,10 @@ class NotesViewController: UIViewController,UITextViewDelegate {
             if(txtBody.text != "")
             {
             self.delegate!.didUpdateNoteWithTitle(self.navigationItem.title!, andBody: self.txtBody.text)
+            }
+            else
+            {
+                self.delegate!.deleteFirstRow()
             }
         }
     }
