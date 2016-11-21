@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E8012B821DD19580008FE33D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8012B811DD19580008FE33D /* NotesViewController.swift */; };
+		E81424441DDA359500DF422C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81424421DDA359500DF422C /* Interface.storyboard */; };
+		E81424461DDA359500DF422C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81424451DDA359500DF422C /* Assets.xcassets */; };
+		E814244D1DDA359500DF422C /* SmartNursingSystem Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E814244C1DDA359500DF422C /* SmartNursingSystem Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E81424541DDA359500DF422C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81424531DDA359500DF422C /* InterfaceController.swift */; };
+		E81424561DDA359500DF422C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81424551DDA359500DF422C /* ExtensionDelegate.swift */; };
+		E81424581DDA359500DF422C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81424571DDA359500DF422C /* NotificationController.swift */; };
+		E814245A1DDA359500DF422C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81424591DDA359500DF422C /* Assets.xcassets */; };
+		E814245E1DDA359500DF422C /* SmartNursingSystem.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E81424401DDA359500DF422C /* SmartNursingSystem.app */; };
+		E8431D5F1DE2A93D00147D9F /* NoteTakingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8431D5E1DE2A93D00147D9F /* NoteTakingInterfaceController.swift */; };
+		E8431D621DE2B3FA00147D9F /* AlertsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8431D611DE2B3FA00147D9F /* AlertsInterfaceController.swift */; };
 		E8892ACE1DCEABA200748739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8892ACD1DCEABA200748739 /* AppDelegate.swift */; };
 		E8892AD01DCEABA200748739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8892ACF1DCEABA200748739 /* ViewController.swift */; };
 		E8892AD31DCEABA200748739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8892AD11DCEABA200748739 /* Main.storyboard */; };
@@ -22,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E814244E1DDA359500DF422C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8892AC21DCEABA200748739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E814244B1DDA359500DF422C;
+			remoteInfo = "SmartNursingSystem Extension";
+		};
+		E814245C1DDA359500DF422C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8892AC21DCEABA200748739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E814243F1DDA359500DF422C;
+			remoteInfo = SmartNursingSystem;
+		};
 		E8892AE21DCEABA300748739 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8892AC21DCEABA200748739 /* Project object */;
@@ -38,8 +62,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E81424641DDA359500DF422C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E814244D1DDA359500DF422C /* SmartNursingSystem Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81424661DDA359500DF422C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E814245E1DDA359500DF422C /* SmartNursingSystem.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E8012B811DD19580008FE33D /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		E81424401DDA359500DF422C /* SmartNursingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartNursingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81424431DDA359500DF422C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E81424451DDA359500DF422C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81424471DDA359500DF422C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E814244C1DDA359500DF422C /* SmartNursingSystem Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmartNursingSystem Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81424521DDA359500DF422C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E81424531DDA359500DF422C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E81424551DDA359500DF422C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E81424571DDA359500DF422C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E81424591DDA359500DF422C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E814245B1DDA359500DF422C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8431D5E1DE2A93D00147D9F /* NoteTakingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTakingInterfaceController.swift; sourceTree = "<group>"; };
+		E8431D601DE2B11C00147D9F /* NursingSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NursingSystem.entitlements; sourceTree = "<group>"; };
+		E8431D611DE2B3FA00147D9F /* AlertsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsInterfaceController.swift; sourceTree = "<group>"; };
 		E8892ACA1DCEABA200748739 /* NursingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8892ACD1DCEABA200748739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8892ACF1DCEABA200748739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +125,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E81424491DDA359500DF422C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8892AC71DCEABA200748739 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,12 +156,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E81424411DDA359500DF422C /* SmartNursingSystem */ = {
+			isa = PBXGroup;
+			children = (
+				E81424421DDA359500DF422C /* Interface.storyboard */,
+				E81424451DDA359500DF422C /* Assets.xcassets */,
+				E81424471DDA359500DF422C /* Info.plist */,
+			);
+			path = SmartNursingSystem;
+			sourceTree = "<group>";
+		};
+		E81424501DDA359500DF422C /* SmartNursingSystem Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E81424531DDA359500DF422C /* InterfaceController.swift */,
+				E81424551DDA359500DF422C /* ExtensionDelegate.swift */,
+				E81424571DDA359500DF422C /* NotificationController.swift */,
+				E81424591DDA359500DF422C /* Assets.xcassets */,
+				E814245B1DDA359500DF422C /* Info.plist */,
+				E81424511DDA359500DF422C /* Supporting Files */,
+				E8431D5E1DE2A93D00147D9F /* NoteTakingInterfaceController.swift */,
+				E8431D611DE2B3FA00147D9F /* AlertsInterfaceController.swift */,
+			);
+			path = "SmartNursingSystem Extension";
+			sourceTree = "<group>";
+		};
+		E81424511DDA359500DF422C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E81424521DDA359500DF422C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E8892AC11DCEABA200748739 = {
 			isa = PBXGroup;
 			children = (
 				E8892ACC1DCEABA200748739 /* NursingSystem */,
 				E8892AE41DCEABA300748739 /* NursingSystemTests */,
 				E8892AEF1DCEABA300748739 /* NursingSystemUITests */,
+				E81424411DDA359500DF422C /* SmartNursingSystem */,
+				E81424501DDA359500DF422C /* SmartNursingSystem Extension */,
 				E8892ACB1DCEABA200748739 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +207,8 @@
 				E8892ACA1DCEABA200748739 /* NursingSystem.app */,
 				E8892AE11DCEABA300748739 /* NursingSystemTests.xctest */,
 				E8892AEC1DCEABA300748739 /* NursingSystemUITests.xctest */,
+				E81424401DDA359500DF422C /* SmartNursingSystem.app */,
+				E814244C1DDA359500DF422C /* SmartNursingSystem Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +216,7 @@
 		E8892ACC1DCEABA200748739 /* NursingSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E8431D601DE2B11C00147D9F /* NursingSystem.entitlements */,
 				E8892AFE1DCEABE100748739 /* SWRevealViewController */,
 				E8892ACD1DCEABA200748739 /* AppDelegate.swift */,
 				E8892ACF1DCEABA200748739 /* ViewController.swift */,
@@ -155,6 +263,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E814243F1DDA359500DF422C /* SmartNursingSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81424651DDA359500DF422C /* Build configuration list for PBXNativeTarget "SmartNursingSystem" */;
+			buildPhases = (
+				E814243E1DDA359500DF422C /* Resources */,
+				E81424641DDA359500DF422C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E814244F1DDA359500DF422C /* PBXTargetDependency */,
+			);
+			name = SmartNursingSystem;
+			productName = SmartNursingSystem;
+			productReference = E81424401DDA359500DF422C /* SmartNursingSystem.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E814244B1DDA359500DF422C /* SmartNursingSystem Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81424631DDA359500DF422C /* Build configuration list for PBXNativeTarget "SmartNursingSystem Extension" */;
+			buildPhases = (
+				E81424481DDA359500DF422C /* Sources */,
+				E81424491DDA359500DF422C /* Frameworks */,
+				E814244A1DDA359500DF422C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartNursingSystem Extension";
+			productName = "SmartNursingSystem Extension";
+			productReference = E814244C1DDA359500DF422C /* SmartNursingSystem Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		E8892AC91DCEABA200748739 /* NursingSystem */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8892AF51DCEABA300748739 /* Build configuration list for PBXNativeTarget "NursingSystem" */;
@@ -162,10 +304,12 @@
 				E8892AC61DCEABA200748739 /* Sources */,
 				E8892AC71DCEABA200748739 /* Frameworks */,
 				E8892AC81DCEABA200748739 /* Resources */,
+				E81424661DDA359500DF422C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E814245D1DDA359500DF422C /* PBXTargetDependency */,
 			);
 			name = NursingSystem;
 			productName = NursingSystem;
@@ -218,8 +362,20 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = uhcl.edu;
 				TargetAttributes = {
+					E814243F1DDA359500DF422C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E814244B1DDA359500DF422C = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					E8892AC91DCEABA200748739 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = RGA7U9PL84;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E8892AE01DCEABA300748739 = {
 						CreatedOnToolsVersion = 7.3;
@@ -247,11 +403,30 @@
 				E8892AC91DCEABA200748739 /* NursingSystem */,
 				E8892AE01DCEABA300748739 /* NursingSystemTests */,
 				E8892AEB1DCEABA300748739 /* NursingSystemUITests */,
+				E814243F1DDA359500DF422C /* SmartNursingSystem */,
+				E814244B1DDA359500DF422C /* SmartNursingSystem Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E814243E1DDA359500DF422C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81424461DDA359500DF422C /* Assets.xcassets in Resources */,
+				E81424441DDA359500DF422C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E814244A1DDA359500DF422C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E814245A1DDA359500DF422C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8892AC81DCEABA200748739 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +454,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E81424481DDA359500DF422C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81424581DDA359500DF422C /* NotificationController.swift in Sources */,
+				E81424561DDA359500DF422C /* ExtensionDelegate.swift in Sources */,
+				E8431D621DE2B3FA00147D9F /* AlertsInterfaceController.swift in Sources */,
+				E81424541DDA359500DF422C /* InterfaceController.swift in Sources */,
+				E8431D5F1DE2A93D00147D9F /* NoteTakingInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8892AC61DCEABA200748739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +499,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E814244F1DDA359500DF422C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E814244B1DDA359500DF422C /* SmartNursingSystem Extension */;
+			targetProxy = E814244E1DDA359500DF422C /* PBXContainerItemProxy */;
+		};
+		E814245D1DDA359500DF422C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E814243F1DDA359500DF422C /* SmartNursingSystem */;
+			targetProxy = E814245C1DDA359500DF422C /* PBXContainerItemProxy */;
+		};
 		E8892AE31DCEABA300748739 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E8892AC91DCEABA200748739 /* NursingSystem */;
@@ -325,6 +522,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E81424421DDA359500DF422C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81424431DDA359500DF422C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		E8892AD11DCEABA200748739 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,6 +549,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E814245F1DDA359500DF422C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SmartNursingSystem_Extension;
+				INFOPLIST_FILE = SmartNursingSystem/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uhcl.bhavitha.NursingSystem.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		E81424601DDA359500DF422C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SmartNursingSystem_Extension;
+				INFOPLIST_FILE = SmartNursingSystem/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uhcl.bhavitha.NursingSystem.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		E81424611DDA359500DF422C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SmartNursingSystem Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uhcl.bhavitha.NursingSystem.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		E81424621DDA359500DF422C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SmartNursingSystem Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uhcl.bhavitha.NursingSystem.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		E8892AF31DCEABA300748739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,6 +697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NursingSystem/NursingSystem.entitlements;
 				INFOPLIST_FILE = NursingSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uhcl.bhavitha.NursingSystem;
@@ -446,6 +712,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NursingSystem/NursingSystem.entitlements;
 				INFOPLIST_FILE = NursingSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uhcl.bhavitha.NursingSystem;
@@ -503,6 +770,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E81424631DDA359500DF422C /* Build configuration list for PBXNativeTarget "SmartNursingSystem Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81424611DDA359500DF422C /* Debug */,
+				E81424621DDA359500DF422C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81424651DDA359500DF422C /* Build configuration list for PBXNativeTarget "SmartNursingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E814245F1DDA359500DF422C /* Debug */,
+				E81424601DDA359500DF422C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E8892AC51DCEABA200748739 /* Build configuration list for PBXProject "NursingSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
