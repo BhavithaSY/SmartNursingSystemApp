@@ -52,20 +52,24 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="446" y="342"/>
+            <point key="canvasLocation" x="646" y="345"/>
         </scene>
         <!--Alerts Interface Controller-->
         <scene sceneID="5lr-Qp-fk9">
             <objects>
                 <controller id="32a-8z-5tt" customClass="AlertsInterfaceController" customModule="SmartNursingSystem_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Remainder" id="bGu-3T-seR"/>
+                        <button width="1" alignment="left" title="Remainder" id="bGu-3T-seR">
+                            <connections>
+                                <segue destination="WMT-QG-bce" kind="push" id="SsW-cu-h5E"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="StopWatch" id="AcM-r1-c6Y"/>
                         <button width="1" alignment="left" title="Timer" id="oUB-uA-gQ2"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="14" y="515"/>
+            <point key="canvasLocation" x="26" y="869"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -81,21 +85,57 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="402" y="754"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="ljP-Q5-38c">
+        <!--Remainder Interface Controller-->
+        <scene sceneID="vFR-jV-6ae">
             <objects>
-                <controller id="fwS-o8-Jls"/>
+                <controller id="WMT-QG-bce" customClass="RemainderInterfaceController" customModule="SmartNursingSystem_Extension">
+                    <items>
+                        <table alignment="left" id="PFR-Yb-eik">
+                            <items>
+                                <tableRow identifier="rowName" id="Izz-cm-boe" customClass="RemaindersRow" customModule="SmartNursingSystem_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="gNJ-7k-aTv">
+                                        <items>
+                                            <group width="1" alignment="left" layout="vertical" id="RA0-Mh-NhG">
+                                                <items>
+                                                    <label alignment="left" text="Label" id="mKn-3e-WaG"/>
+                                                </items>
+                                            </group>
+                                            <dateLabel alignment="left" id="aCj-Fh-MrT">
+                                                <dateFormatterStyle key="dateStyle" short="YES"/>
+                                                <dateFormatterStyle key="timeStyle" short="YES"/>
+                                            </dateLabel>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateAndTime" destination="aCj-Fh-MrT" id="2GW-5y-d6v"/>
+                                        <outlet property="rowlabel" destination="mKn-3e-WaG" id="JTV-Gt-uPm"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="b9Y-Ro-yh8">
+                        <items>
+                            <menuItem title="Add Remainder" icon="add" id="dyi-Il-Uri"/>
+                            <menuItem title="Delete Remainder" icon="trash" id="a1T-km-c2D"/>
+                            <menuItem title="Delete All" icon="block" id="vxS-7c-vbo"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="tabelOte" destination="PFR-Yb-eik" id="GTt-0t-z9M"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="4" y="812"/>
+            <point key="canvasLocation" x="429" y="955"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SmartNursingSystem" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="708" y="754"/>
         </scene>
     </scenes>
 </document>
