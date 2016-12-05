@@ -13,8 +13,9 @@ import Foundation
 class RemainderInterfaceController: WKInterfaceController {
     
     @IBOutlet var tabelOte: WKInterfaceTable!
-    var arrayOfTabelRows=["Bhavitha","sai","chinnu"]
-
+   // var data:ModelData!
+  var arrayOfTabelRows=["Bhavitha","sai","chinnu"]
+ //  var arr=data
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
       loadTabelData()
@@ -44,6 +45,21 @@ class RemainderInterfaceController: WKInterfaceController {
         }
         
     }
+    
+    //menu items
+    
+    
+    @IBAction func addNewRemainder() {
+        pushControllerWithName("AddingRemainderController", context: nil)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

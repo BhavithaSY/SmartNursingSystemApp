@@ -65,11 +65,38 @@
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="StopWatch" id="AcM-r1-c6Y"/>
-                        <button width="1" alignment="left" title="Timer" id="oUB-uA-gQ2"/>
+                        <button width="1" alignment="left" title="Timer" id="oUB-uA-gQ2">
+                            <connections>
+                                <segue destination="i3n-Yy-3zJ" kind="push" id="6FD-68-zVy"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="26" y="869"/>
+        </scene>
+        <!--Timer Interface Controller-->
+        <scene sceneID="64f-rB-9GB">
+            <objects>
+                <controller id="i3n-Yy-3zJ" customClass="TimerInterfaceController" customModule="SmartNursingSystem_Extension">
+                    <items>
+                        <timer alignment="center" id="pJB-fN-iPZ"/>
+                        <button alignment="center" title="Start" id="g3D-ul-ajF">
+                            <connections>
+                                <action selector="startStopTimerFunction" destination="i3n-Yy-3zJ" id="ZiS-cD-fzb"/>
+                            </connections>
+                        </button>
+                        <dateLabel alignment="left" id="GPo-RM-EzW">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                    <connections>
+                        <outlet property="statstopbutton" destination="g3D-ul-ajF" id="E6b-TI-CJR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="116" y="1187"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -118,7 +145,11 @@
                     </items>
                     <menu key="menu" id="b9Y-Ro-yh8">
                         <items>
-                            <menuItem title="Add Remainder" icon="add" id="dyi-Il-Uri"/>
+                            <menuItem title="Add Remainder" icon="add" id="dyi-Il-Uri">
+                                <connections>
+                                    <action selector="addNewRemainder" destination="WMT-QG-bce" id="itV-tG-iEs"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Delete Remainder" icon="trash" id="a1T-km-c2D"/>
                             <menuItem title="Delete All" icon="block" id="vxS-7c-vbo"/>
                         </items>
@@ -128,7 +159,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="429" y="955"/>
+            <point key="canvasLocation" x="447" y="985"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
@@ -136,6 +167,25 @@
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SmartNursingSystem" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="708" y="754"/>
+        </scene>
+        <!--AddingRemainderController-->
+        <scene sceneID="jD0-01-QqU">
+            <objects>
+                <controller identifier="AddingRemainderController" id="vfE-Xk-KPy" customClass="ActualReamainderAddingInterfaceController" customModule="SmartNursingSystem_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="choose a remainder" id="MC6-AM-ei2">
+                            <connections>
+                                <action selector="givingInput" destination="vfE-Xk-KPy" id="rtY-qu-TBF"/>
+                            </connections>
+                        </button>
+                        <label width="134.5" alignment="center" text="Label" textAlignment="center" id="FGi-LM-EqM"/>
+                    </items>
+                    <connections>
+                        <outlet property="textOutPut" destination="FGi-LM-EqM" id="gWk-4f-5m1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="700" y="1013"/>
         </scene>
     </scenes>
 </document>

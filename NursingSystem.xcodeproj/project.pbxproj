@@ -16,10 +16,13 @@
 		E81424581DDA359500DF422C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81424571DDA359500DF422C /* NotificationController.swift */; };
 		E814245A1DDA359500DF422C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81424591DDA359500DF422C /* Assets.xcassets */; };
 		E814245E1DDA359500DF422C /* SmartNursingSystem.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E81424401DDA359500DF422C /* SmartNursingSystem.app */; };
+		E82061481DF251B400A47F58 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82061471DF251B400A47F58 /* ModelData.swift */; };
 		E8409FE21DF0C55A00EFF059 /* RemainderInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8409FE11DF0C55A00EFF059 /* RemainderInterfaceController.swift */; };
 		E8409FE41DF0C73C00EFF059 /* RemaindersRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8409FE31DF0C73C00EFF059 /* RemaindersRow.swift */; };
 		E8431D5F1DE2A93D00147D9F /* NoteTakingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8431D5E1DE2A93D00147D9F /* NoteTakingInterfaceController.swift */; };
 		E8431D621DE2B3FA00147D9F /* AlertsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8431D611DE2B3FA00147D9F /* AlertsInterfaceController.swift */; };
+		E87E8FA31DF14530008B6355 /* ActualReamainderAddingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E8FA21DF14530008B6355 /* ActualReamainderAddingInterfaceController.swift */; };
+		E883C8381DF27E6C0035513B /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C8371DF27E6C0035513B /* TimerInterfaceController.swift */; };
 		E8892ACE1DCEABA200748739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8892ACD1DCEABA200748739 /* AppDelegate.swift */; };
 		E8892AD01DCEABA200748739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8892ACF1DCEABA200748739 /* ViewController.swift */; };
 		E8892AD31DCEABA200748739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8892AD11DCEABA200748739 /* Main.storyboard */; };
@@ -102,11 +105,14 @@
 		E81424571DDA359500DF422C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		E81424591DDA359500DF422C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E814245B1DDA359500DF422C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E82061471DF251B400A47F58 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		E8409FE11DF0C55A00EFF059 /* RemainderInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemainderInterfaceController.swift; sourceTree = "<group>"; };
 		E8409FE31DF0C73C00EFF059 /* RemaindersRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemaindersRow.swift; sourceTree = "<group>"; };
 		E8431D5E1DE2A93D00147D9F /* NoteTakingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTakingInterfaceController.swift; sourceTree = "<group>"; };
 		E8431D601DE2B11C00147D9F /* NursingSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NursingSystem.entitlements; sourceTree = "<group>"; };
 		E8431D611DE2B3FA00147D9F /* AlertsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsInterfaceController.swift; sourceTree = "<group>"; };
+		E87E8FA21DF14530008B6355 /* ActualReamainderAddingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualReamainderAddingInterfaceController.swift; sourceTree = "<group>"; };
+		E883C8371DF27E6C0035513B /* TimerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
 		E8892ACA1DCEABA200748739 /* NursingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8892ACD1DCEABA200748739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8892ACF1DCEABA200748739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +189,9 @@
 				E8431D611DE2B3FA00147D9F /* AlertsInterfaceController.swift */,
 				E8409FE11DF0C55A00EFF059 /* RemainderInterfaceController.swift */,
 				E8409FE31DF0C73C00EFF059 /* RemaindersRow.swift */,
+				E87E8FA21DF14530008B6355 /* ActualReamainderAddingInterfaceController.swift */,
+				E82061471DF251B400A47F58 /* ModelData.swift */,
+				E883C8371DF27E6C0035513B /* TimerInterfaceController.swift */,
 			);
 			path = "SmartNursingSystem Extension";
 			sourceTree = "<group>";
@@ -464,7 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87E8FA31DF14530008B6355 /* ActualReamainderAddingInterfaceController.swift in Sources */,
 				E81424581DDA359500DF422C /* NotificationController.swift in Sources */,
+				E82061481DF251B400A47F58 /* ModelData.swift in Sources */,
+				E883C8381DF27E6C0035513B /* TimerInterfaceController.swift in Sources */,
 				E8409FE21DF0C55A00EFF059 /* RemainderInterfaceController.swift in Sources */,
 				E81424561DDA359500DF422C /* ExtensionDelegate.swift in Sources */,
 				E8409FE41DF0C73C00EFF059 /* RemaindersRow.swift in Sources */,
